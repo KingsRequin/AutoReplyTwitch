@@ -1,0 +1,55 @@
+<!--      ||============================================================================================||
+          ||                                                                                            ||
+          ||   ██╗  ██╗██╗███╗   ██╗ ██████╗ ███████╗██████╗ ███████╗ ██████╗ ██╗   ██╗██╗███╗   ██╗    ||
+          ||   ██║ ██╔╝██║████╗  ██║██╔════╝ ██╔════╝██╔══██╗██╔════╝██╔═══██╗██║   ██║██║████╗  ██║    || 
+          ||   █████╔╝ ██║██╔██╗ ██║██║  ███╗███████╗██████╔╝█████╗  ██║   ██║██║   ██║██║██╔██╗ ██║    ||
+          ||   ██╔═██╗ ██║██║╚██╗██║██║   ██║╚════██║██╔══██╗██╔══╝  ██║▄▄ ██║██║   ██║██║██║╚██╗██║    ||
+          ||   ██║  ██╗██║██║ ╚████║╚██████╔╝███████║██║  ██║███████╗╚██████╔╝╚██████╔╝██║██║ ╚████║    ||
+          ||   ╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚══════╝╚═╝  ╚═╝╚══════╝ ╚══▀▀═╝  ╚═════╝ ╚═╝╚═╝  ╚═══╝    ||
+          ||                                                                                 By ChatGPT ||
+          ||============================================================================================||                              -->
+
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Twitch Bot</title>
+    <link rel="stylesheet" href="style.css" />
+    <head>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="script.js"></script>
+    </head>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Twitch Bot</h1>
+      <form>
+        <div class="form-group">
+          <label for="word-input">Mot à surveiller</label>
+          <input type="text" id="word-input" />
+        </div>
+        <div class="form-group">
+          <label for="response-input">Réponse</label>
+          <input type="text" id="response-input" />
+        </div>
+        <button type="submit">Ajouter</button>
+      </form>
+      <hr />
+      <h2>Mots surveillés</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Mot</th>
+            <th>Réponse</th>
+            <th>Supprimer</th>
+          </tr>
+        </thead>
+        <tbody id="word-table-body"></tbody>
+      </table>
+    </div>
+    <script src="https://github.com/tmijs/tmi.js/releases/download/v1.8.5/tmi.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
